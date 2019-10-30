@@ -1,5 +1,5 @@
 //
-//  CVViewController.swift
+//  ExperienceViewController.swift
 //  Lab02CV
 //
 //  Created by Johan Kantola on 2019-10-30.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CVViewController: UIViewController {
+class ExperienceViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
