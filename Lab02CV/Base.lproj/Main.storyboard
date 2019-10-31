@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WMk-rw-hwr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9VP-j3-dbi">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -74,7 +74,7 @@
                                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <attributedString key="attributedText">
                                             <fragment>
-                                                <mutableString key="content">Aliquam erat volutpat. Donec placerat, ante quis laoreet consequat, leo leo semper magna, id mattis dolor nisl eu nunc. Phasellus suscipit, justo vel malesuada dapibus, enim massa feugiat sem, vel egestas arcu lacus et lectus. Morbi sed urna purus. Curabitur mattis condimentum arcu eget aliquet.Praesent ipsum nisi, scelerisque ac neque id, imperdiet pretium purus. Maecenas tincidunt luctus turpis non dignissim. Integer finibus aliquet dolor a ullamcorper. Nunc viverra vel ante ut fermentum. Duis mauris nibh, laoreet a pretium id, porttitor sed nunc.</mutableString>
+                                                <string key="content">Aliquam erat volutpat. Donec placerat, ante quis laoreet consequat, leo leo semper magna, id mattis dolor nisl eu nunc. Phasellus suscipit, justo vel malesuada dapibus, enim massa feugiat sem, vel egestas arcu lacus et lectus. Morbi sed urna purus. Curabitur mattis condimentum arcu eget aliquet.Praesent ipsum nisi, scelerisque ac neque id, imperdiet pretium purus. Maecenas tincidunt luctus turpis non dignissim. Integer finibus aliquet dolor a ullamcorper. Nunc viverra vel ante ut fermentum. Duis mauris nibh, laoreet a pretium id, porttitor sed nunc.</string>
                                                 <attributes>
                                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" size="18" name="HelveticaNeue"/>
@@ -104,6 +104,9 @@
                                 <state key="normal" title="Experience">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="pdE-to-Y2T" kind="show" id="63e-U0-E5y"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luS-DU-Zjb">
                                 <rect key="frame" x="0.0" y="799" width="414" height="48"/>
@@ -138,6 +141,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dsb-0t-Q1d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1026.0869565217392" y="67.633928571428569"/>
+        </scene>
+        <!--Experience-->
+        <scene sceneID="hf6-dq-Fgt">
+            <objects>
+                <viewController id="pdE-to-Y2T" customClass="ExperienceViewController" customModule="Lab02CV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Txy-2I-js3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="CJM-dh-8sg"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Experience" id="fqi-JZ-reh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JlH-yN-yRU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2032" y="66"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Znh-Em-qMw">
