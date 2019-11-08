@@ -13,32 +13,25 @@ class ExperienceDetailViewController: UIViewController {
     var nameFromPrep: String = ""
     var fromToFromPrep: String = ""
     var imageFromPrep: String = ""
+    var descriptionFromPrep: String = ""
+    var informationFromPrep: String = ""
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var fromToLabel: UILabel!
+    @IBOutlet weak var informationLabel: UILabel!
     
-    @IBOutlet weak var FromToLabel: UILabel!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
         nameLabel.text? = nameFromPrep
-        FromToLabel.text? = fromToFromPrep
+        descriptionLabel.text? = descriptionFromPrep
+        fromToLabel.text? = fromToFromPrep
         imageView.image = UIImage(named: imageFromPrep)
+        informationLabel.text? = informationFromPrep
         
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -16,14 +16,17 @@ class ExpObject {
     var name: String
     var fromTo: String
     var description: String
+    var information: String
     
     
-    init(imageName: String = "default", name: String, fromTo:String, description: String){
+    init(imageName: String = "default", name: String, fromTo:String, description: String, information: String){
         self.imageName = imageName
         self.name = name
         self.fromTo = fromTo
         self.description = description
+        self.information = information
     }
+    
     func getImageName()-> String {
         return self.imageName
     }
