@@ -11,38 +11,30 @@ import UIKit
 class SkillsViewController: UIViewController {
     
     
-    @IBOutlet weak var TjohoLabel: UILabel!
-
+    @IBOutlet weak var imageLabel: UIImageView!
+    @IBOutlet weak var closeButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        imageLabel.alpha = 0
+        closeButton.alpha = 0
+        
+    }
+   
+    @IBAction func closeButtonKlicked(_ sender: UIButton) {
+        
+        self.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func buttonKlicked(_ sender: Any) {
-        UIView.animate(withDuration: 1, animations: {
-              
-            if self.TjohoLabel.frame.origin.y >= 0 && self.TjohoLabel.frame.origin.x >= -90 {
-                self.TjohoLabel.frame.origin.y -= 50
-                self.TjohoLabel.frame.origin.x -= 50
-            }
-            else{
-            //self.TjohoLabel.frame.origin.y -= 50
-               
-                self.TjohoLabel.frame.origin.x += 50
-            }
-        }, completion: nil)
-    }
-    
-    
-    
-    // Screen width.
-    public var screenWidth: CGFloat {
-        return UIScreen.main.bounds.width
-    }
+    override func viewDidAppear(_ animated: Bool) {
+        
+        UIView.animate(withDuration: 3, animations: {
+            self.imageLabel.alpha = 1
 
-    // Screen height.
-    public var screenHeight: CGFloat {
-        return UIScreen.main.bounds.height
+            self.imageLabel?.transform = CGAffineTransform(scaleX: 5, y: 5)
+        }) { (True) in
+            self.closeButton.alpha = 1
+        }
     }
 }
 

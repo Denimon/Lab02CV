@@ -12,7 +12,6 @@ class ExperienceViewController: UIViewController {
 
     @IBOutlet weak var ExperienceView: UITableView!
     
-   
     var workList: [ExpObject] = []
     var educationList: [ExpObject] = []
     let sections: [String] = ["Work", "Education"]
@@ -56,16 +55,21 @@ extension ExperienceViewController: UITableViewDelegate, UITableViewDataSource{
             cell.ExperienceImageView?.image = UIImage(named: sectionData[indexPath.section]![indexPath.row].imageName)
             cell.nameLabel?.text = sectionData[indexPath.section]![indexPath.row].name
             cell.FromToLabel?.text = sectionData[indexPath.section]![indexPath.row].fromTo
+            
             return cell
         }
        
         return UITableViewCell()
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         let infoCell: ExpObject? = sectionData[indexPath.section]![indexPath.row]
         performSegue(withIdentifier: "specificCell", sender: infoCell)
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         let destinationToExpVC = segue.destination as? ExperienceDetailViewController
         let dataToSend: ExpObject? = sender as? ExpObject
         destinationToExpVC?.nameFromPrep = dataToSend?.name ?? "fail to load content"
@@ -73,6 +77,5 @@ extension ExperienceViewController: UITableViewDelegate, UITableViewDataSource{
         destinationToExpVC?.descriptionFromPrep = dataToSend?.description ?? "fail to load content"
         destinationToExpVC?.fromToFromPrep = dataToSend?.fromTo ?? "fail to load content"
         destinationToExpVC?.informationFromPrep = dataToSend?.information ?? "fail to load content"
-        
     }
 }
