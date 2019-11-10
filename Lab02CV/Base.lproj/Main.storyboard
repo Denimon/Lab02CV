@@ -162,10 +162,10 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wea-4j-2yr">
-                                <rect key="frame" x="334" y="20.5" width="21" height="18.5"/>
+                                <rect key="frame" x="325" y="20.5" width="30" height="28.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="21" id="HMl-05-g0C"/>
-                                    <constraint firstAttribute="height" constant="20" id="tSv-kT-Tem"/>
+                                    <constraint firstAttribute="width" constant="30" id="HMl-05-g0C"/>
+                                    <constraint firstAttribute="height" constant="30" id="tSv-kT-Tem"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="0.81000000000000005" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" backgroundImage="xmark.octagon.fill" catalog="system"/>
@@ -194,7 +194,7 @@
             </objects>
             <point key="canvasLocation" x="1005.7971014492755" y="788.83928571428567"/>
         </scene>
-        <!--Experience View Controller-->
+        <!--Experience-->
         <scene sceneID="vDj-DO-TvZ">
             <objects>
                 <viewController id="N5t-WC-KFh" customClass="ExperienceViewController" customModule="Lab02CV" customModuleProvider="target" sceneMemberID="viewController">
@@ -264,7 +264,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gph-oa-5lR"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ca0-yj-KFb"/>
+                    <navigationItem key="navigationItem" title="Experience" id="ca0-yj-KFb"/>
                     <connections>
                         <outlet property="ExperienceView" destination="lSZ-zE-xS2" id="jk8-hy-cLq"/>
                         <segue destination="oMd-H1-jHn" kind="show" identifier="specificCell" id="NQm-eq-Gy7"/>

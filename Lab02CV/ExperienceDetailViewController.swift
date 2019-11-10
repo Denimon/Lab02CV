@@ -26,7 +26,7 @@ class ExperienceDetailViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
+        self.navigationItem.title = nameFromPrep
         nameLabel.text? = nameFromPrep
         descriptionLabel.text? = descriptionFromPrep
         fromToLabel.text? = fromToFromPrep
